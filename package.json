@@ -1,0 +1,40 @@
+{
+    "name": "fastify-alive",
+    "description": "A Health Check Fastify plugin",
+    "main": "lib/index.js",
+    "files": [
+        "lib"
+    ],
+    "engines": {
+        "node": "^16.16.0",
+        "npm": "^8.11.0"
+    },
+    "settings": {
+        "rootProject.name": "fastify-alive"
+    },
+    "scripts": {
+        "test": "jest --config=jest.config.json --coverage --detectOpenHandles",
+        "check": "npm test",
+        "lint": "./node_modules/.bin/eslint ."
+    },
+    "keywords": [
+        "fastify",
+        "alive",
+        "healthcheck",
+        "status",
+        "plugin"
+    ],
+    "author": "Marc Arakill",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.13.0",
+        "eslint-plugin-jest": "^26.1.4",
+        "eslint-plugin-jest-formatting": "^3.1.0",
+        "fastify": "^4.10.2",
+        "jest": "^27.5.1"
+    },
+    "dependencies": {
+        "@fastify/static": "^6.6.0",
+        "fastify-plugin": "^4.4.0"
+    }
+}

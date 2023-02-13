@@ -1,0 +1,15 @@
+{
+	"clearMocks": true,
+	"coverageDirectory": "coverage",
+	"collectCoverageFrom": [ 
+		"./lib/**",
+		"!./lib/files/**",
+		"!./examples/index.js"
+	],
+	"testEnvironment": "node",
+	"testPathIgnorePatterns": [
+		"/node_modules/",
+		"/dist/",
+		"/.local/"
+	]
+}
